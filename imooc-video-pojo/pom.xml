@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>com.imooc</groupId>
-            <artifactId>imoocvideo-dev-common</artifactId>
+            <artifactId>imooc-video-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
