@@ -6,7 +6,28 @@
 
     <groupId>groupId</groupId>
     <artifactId>imooc-video-dev</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>imooc-video-common</module>
+        <module>imooc-video-mapper</module>
+        <module>imooc-video-pojo</module>
+        <module>imooc-video-service</module>
+        <module>imooc-video-web</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.12.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
 
 
 

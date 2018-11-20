@@ -6,11 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="imooc-video-dev" />
+        <module name="imooc-video-common" />
+        <module name="imooc-video-mapper" />
+        <module name="imooc-video-pojo" />
+        <module name="imooc-video-service" />
+        <module name="imooc-video-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="imooc-video-dev" target="1.5" />
+      <module name="imooc-video-common" target="1.8" />
+      <module name="imooc-video-dev" target="1.8" />
+      <module name="imooc-video-mapper" target="1.8" />
+      <module name="imooc-video-pojo" target="1.8" />
+      <module name="imooc-video-service" target="1.8" />
+      <module name="imooc-video-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

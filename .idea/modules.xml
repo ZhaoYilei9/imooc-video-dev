@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/imooc-video-common/imooc-video-common.iml" filepath="$PROJECT_DIR$/imooc-video-common/imooc-video-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/imooc-video-dev.iml" filepath="$PROJECT_DIR$/.idea/imooc-video-dev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-video-mapper/imooc-video-mapper.iml" filepath="$PROJECT_DIR$/imooc-video-mapper/imooc-video-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-video-pojo/imooc-video-pojo.iml" filepath="$PROJECT_DIR$/imooc-video-pojo/imooc-video-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-video-service/imooc-video-service.iml" filepath="$PROJECT_DIR$/imooc-video-service/imooc-video-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imooc-video-web/imooc-video-web.iml" filepath="$PROJECT_DIR$/imooc-video-web/imooc-video-web.iml" />
     </modules>
   </component>
 </project>
