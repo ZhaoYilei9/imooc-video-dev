@@ -38,10 +38,8 @@ public class VideoController extends BaseController{
         log.info("pageSize:{}",pageSize);
         log.info("isSaveRecord:{}",isSaveRecord);
         PagedResult result = videoService.queryVideoList(page, pageSize,isSaveRecord);
-        if (videos == null || videos.size() < 1){
-            return IMoocJSONResult.errorMsg("");
-        }
-        return IMoocJSONResult.ok(videos);
+
+        return IMoocJSONResult.ok(result);
     }
 
     //上传与合并视频
