@@ -18,4 +18,10 @@ public class BgmServiceImpl implements BgmService {
         List<Bgm> bgms = bgmMapper.selectAll();
         return bgms;
     }
+
+    @Override
+    public Bgm getById(String bgmId) {
+        Bgm bgm = bgmMapper.selectByPrimaryKey(bgmId);
+        return bgm;
+    }
 }

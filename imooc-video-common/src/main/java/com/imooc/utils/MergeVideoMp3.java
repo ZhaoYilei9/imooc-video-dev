@@ -10,16 +10,18 @@ public class MergeVideoMp3 {
 
 	private String ffmpegEXE;
 	
-	public MergeVideoMp3(String ffmpegEXE) {
+	public MergeVideoMp3() {
 		super();
-		this.ffmpegEXE = ffmpegEXE;
 	}
 	
 	public void convertor(String videoInputPath, String mp3InputPath,
 			double seconds, String videoOutputPath) throws Exception {
-//		ffmpeg.exe -i 苏州大裤衩.mp4 -i bgm.mp3 -t 7 -y 新的视频.mp4
+
+		//// String avitoflv= "ffmpeg -i "+infile+"
+		//		// -i "+inmp3+" -t " + time + " -c:v copy
+		//		// -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 " + outfile;
 		List<String> command = new ArrayList<>();
-		command.add(ffmpegEXE);
+		command.add("ffmpeg");
 		
 		command.add("-i");
 		command.add(videoInputPath);
@@ -29,7 +31,18 @@ public class MergeVideoMp3 {
 		
 		command.add("-t");
 		command.add(String.valueOf(seconds));
-		
+
+		command.add("-c:v");
+		command.add("copy");
+		command.add("-c:a");
+		command.add("aac");
+		command.add("-strict");
+		command.add("experimental");
+		command.add("-map");
+		command.add("0:v:0");
+		command.add("-map");
+		command.add("1:a:0");
+
 		command.add("-y");
 		command.add(videoOutputPath);
 		
@@ -61,12 +74,12 @@ public class MergeVideoMp3 {
 	}
 
 	public static void main(String[] args) {
-		MergeVideoMp3 ffmpeg = new MergeVideoMp3("C:\\ffmpeg\\bin\\ffmpeg.exe");
-		try {
-			ffmpeg.convertor("C:\\苏州大裤衩.mp4", "C:\\music.mp3", 7.1, "C:\\这是通过java生产的视频.mp4");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		MergeVideoMp3 ffmpeg = new MergeVideoMp3("C:\\ffmpeg\\bin\\ffmpeg.exe");
+//		try {
+//			ffmpeg.convertor("C:\\苏州大裤衩.mp4", "C:\\music.mp3", 7.1, "C:\\这是通过java生产的视频.mp4");
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 
 }

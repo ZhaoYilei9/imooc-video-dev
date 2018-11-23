@@ -8,4 +8,5 @@ import java.util.List;
 public interface BgmService {
     List<Bgm> getAll();
 
+    Bgm getById(String bgmId);
 }

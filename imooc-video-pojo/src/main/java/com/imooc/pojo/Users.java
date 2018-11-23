@@ -153,5 +153,8 @@ public class Users {
      */
     public void setReceiveLikeCounts(Integer receiveLikeCounts) {
         this.receiveLikeCounts = receiveLikeCounts;
+
     }
+
+
 }
