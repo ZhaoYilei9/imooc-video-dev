@@ -8,6 +8,8 @@ import com.imooc.utils.*;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.n3r.idworker.Sid;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,11 +17,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
-import java.util.UUID;
+import java.util.List;
 
 @RestController
 @RequestMapping("video")
 public class VideoController extends BaseController{
+
+    private static final Logger log = LoggerFactory.getLogger(VideoController.class);
 
     @Autowired
     private BgmService bgmService;
@@ -27,6 +31,18 @@ public class VideoController extends BaseController{
     private VideoService videoService;
     @Autowired
     private Sid sid;
+    //查询视频列表video/list?page=1&pageSize=7&isSaveRecord=0
+    @PostMapping("list")
+    public IMoocJSONResult videoList(int page,int pageSize,int isSaveRecord){
+        log.info("page:{}",page);
+        log.info("pageSize:{}",pageSize);
+        log.info("isSaveRecord:{}",isSaveRecord);
+        List<Videos> videos = videoService.queryVideoList(page, pageSize,isSaveRecord);
+        if (videos == null || videos.size() < 1){
+            return IMoocJSONResult.errorMsg("");
+        }
+        return IMoocJSONResult.ok(videos);
+    }
 
     //上传与合并视频
     @PostMapping("upload")
