@@ -37,7 +37,7 @@ public class VideoController extends BaseController{
         log.info("page:{}",page);
         log.info("pageSize:{}",pageSize);
         log.info("isSaveRecord:{}",isSaveRecord);
-        List<Videos> videos = videoService.queryVideoList(page, pageSize,isSaveRecord);
+        PagedResult result = videoService.queryVideoList(page, pageSize,isSaveRecord);
         if (videos == null || videos.size() < 1){
             return IMoocJSONResult.errorMsg("");
         }
