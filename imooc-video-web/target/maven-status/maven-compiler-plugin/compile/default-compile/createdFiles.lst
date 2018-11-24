@@ -1,8 +1,0 @@
-com/imooc/WebMvcConfig.class
-com/imooc/exception/RegistException.class
-com/imooc/controller/BaseController.class
-com/imooc/controller/UserController.class
-com/imooc/Mini.class
-com/imooc/controller/RegistryAndLoginController.class
-com/imooc/controller/VideoController.class
-com/imooc/controller/BgmController.class
