@@ -24,6 +24,14 @@ public class UserController extends BaseController{
 
     @Autowired
     private UserService userService;
+    //查询视频发布者的信息
+    // /queryPublisher?publisherUserId=&videoId=&loginUserId=
+    @PostMapping("queryPublisher")
+    public IMoocJSONResult queryPublisher(String publisherUserId,String videoId,String loginUserId){
+
+
+        return IMoocJSONResult.ok();
+    }
     //上传头像
     @PostMapping("upload")
     public IMoocJSONResult uploadFaceImage(String userId, MultipartFile file) {
@@ -34,7 +42,7 @@ public class UserController extends BaseController{
         String fileDir = fileSpace + userId + "/face/";
         String fileName = file.getOriginalFilename();
         String filePath = fileDir + fileName;
-        String DBPath = userId + "/face/" + fileName;
+        String DBPath = "/" + userId + "/face/" + fileName;
         File outFile = new File(filePath);
         if (outFile.getParentFile() != null && !outFile.getParentFile().isDirectory()){
             //mkdir()是错误的,mkdirs()可以递归创建

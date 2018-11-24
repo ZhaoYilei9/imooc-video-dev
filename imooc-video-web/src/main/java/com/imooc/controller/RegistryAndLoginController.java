@@ -52,7 +52,7 @@ public class RegistryAndLoginController extends BaseController{
     }
 
     private UsersVO setUserSessionToken(Users users) {
-        String sessionKey = USER_REDIS_SESSION + users.getId();
+        String sessionKey = USER_REDIS_SESSION + ":" + users.getId();
         String userToken = UUID.randomUUID().toString();
         redis.set(sessionKey,userToken);
         UsersVO usersVO = new UsersVO();
@@ -78,6 +78,12 @@ public class RegistryAndLoginController extends BaseController{
 
 
         return IMoocJSONResult.ok(usersVO);
+    }
+
+    @PostMapping("logout")
+    public IMoocJSONResult userLogout(String userId){
+        redis.del(USER_REDIS_SESSION + ":" + userId);
+        return IMoocJSONResult.ok();
     }
 
 

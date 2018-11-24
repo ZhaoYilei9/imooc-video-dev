@@ -12,11 +12,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -32,15 +34,29 @@ public class VideoController extends BaseController{
     @Autowired
     private Sid sid;
     //查询视频列表video/list?page=1&pageSize=7&isSaveRecord=0
-    @PostMapping("list")
-    public IMoocJSONResult videoList(int page,int pageSize,int isSaveRecord){
+    @PostMapping("showAll")
+    public IMoocJSONResult showAll(int page,int pageSize,int isSaveRecord,@RequestBody Videos videos){
+        PagedResult result = videoService.showAll(page, pageSize, isSaveRecord, videos);
+        return IMoocJSONResult.ok(result);
+    }
+    @PostMapping("listMyWork")
+    public IMoocJSONResult videoList(int page,int pageSize,@RequestBody Videos videos){
         log.info("page:{}",page);
         log.info("pageSize:{}",pageSize);
-        log.info("isSaveRecord:{}",isSaveRecord);
-        PagedResult result = videoService.queryVideoList(page, pageSize,isSaveRecord);
+        log.info("userID :{}",videos.getUserId());
+        PagedResult result = videoService.queryVideoList(page, pageSize,videos);
+        return IMoocJSONResult.ok(result);
+    }
+    @PostMapping("listMyLike")
+    public IMoocJSONResult showMyLike(int page,int pageSize,@RequestBody Videos videos){
+        log.info("mylike:{}",page);
+        log.info("pageSize:{}",pageSize);
+        log.info("userID:{}",videos.getUserId());
+        PagedResult result = videoService.showMyLike(page,pageSize,videos);
 
         return IMoocJSONResult.ok(result);
     }
+
 
     //上传与合并视频
     @PostMapping("upload")
@@ -54,8 +70,8 @@ public class VideoController extends BaseController{
         String fileDir = fileSpace  + userId + "/video/";
         String fileName = file.getOriginalFilename();
         String filePath = fileDir + fileName;
-        String DBDir = userId + "/video/";
-        String DBPath = userId + "/video/" + fileName;
+        String DBDir = "/" + userId + "/video/";
+        String DBPath = DBDir + fileName;
         File outFile = new File(filePath);
         if (outFile.getParentFile() != null && !outFile.getParentFile().isDirectory()){
             //mkdir()是错误的,mkdirs()可以递归创建
@@ -89,7 +105,6 @@ public class VideoController extends BaseController{
                 }
             }
 
-
         }
         if (StringUtils.isNotBlank(bgmId)){
             Bgm bgm = bgmService.getById(bgmId);
@@ -97,7 +112,8 @@ public class VideoController extends BaseController{
                 String bgmPath = fileSpace + bgm.getPath();
 //                MyFFMpegTest ffMpeg = new MyFFMpegTest();
                 float mergeVideoTime = videos.getVideoSeconds();
-                String mergeVideoName = videos.getId() + ".avi";
+                //avi格式是不能在线播放的
+                String mergeVideoName = videos.getId() + ".mp4";
                 String mergeVideoPath = fileDir + mergeVideoName;
                 MergeVideoMp3 mergeVideoMp3 = new MergeVideoMp3();
                 mergeVideoMp3.convertor(filePath,bgmPath,mergeVideoTime,mergeVideoPath);
@@ -115,15 +131,13 @@ public class VideoController extends BaseController{
         FetchVideoCover fetchVideoCover = new FetchVideoCover();
         fetchVideoCover.getCover(videoPath,coverPath);
         videos.setCoverPath(DBCover);
-        System.out.println(DBCover);
-
-
-
-
-
-
-
-        return IMoocJSONResult.ok();
+//        System.out.println(DBCover);
+        videos.setCreateTime(new Date());
+        videos.setLikeCounts(0l);
+        videos.setStatus(1);
+        //千万别忘了保存到数据库奥！
+        videoService.saveVideo(videos);
+        return IMoocJSONResult.ok("上传成功");
     }
 
 }
