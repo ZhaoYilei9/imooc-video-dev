@@ -21,7 +21,7 @@ public class MergeVideoMp3 {
 		//		// -i "+inmp3+" -t " + time + " -c:v copy
 		//		// -c:a aac -strict experimental -map 0:v:0 -map 1:a:0 " + outfile;
 		List<String> command = new ArrayList<>();
-		command.add("ffmpeg");
+		command.add("/usr/bin/ffmpeg");
 		
 		command.add("-i");
 		command.add(videoInputPath);
