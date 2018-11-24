@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52a9d7f2-b753-456e-b92e-58fc080b4c1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/imooc-video-pojo/src/main/java/com/imooc/vo/VideosVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-mapper/src/main/java/com/imooc/mapper/VideosMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-mapper/src/main/java/com/imooc/mapper/VideosMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-mapper/target/classes/com/imooc/mapper/VideosMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-mapper/target/classes/com/imooc/mapper/VideosMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-service/src/main/java/com/imooc/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-service/src/main/java/com/imooc/service/VideoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-service/src/main/java/com/imooc/service/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-service/src/main/java/com/imooc/service/impl/VideoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-service/target/classes/com/imooc/service/VideoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-service/target/classes/com/imooc/service/VideoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-service/target/classes/com/imooc/service/impl/VideoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-service/target/classes/com/imooc/service/impl/VideoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/RegistryAndLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/RegistryAndLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/VideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-web/target/classes/com/imooc/controller/RegistryAndLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/target/classes/com/imooc/controller/RegistryAndLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-web/target/classes/com/imooc/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/target/classes/com/imooc/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-video-web/target/classes/com/imooc/controller/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/target/classes/com/imooc/controller/VideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-video-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-video-web/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/imooc-video-common/target/" />
@@ -53,46 +39,64 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="42" />
-          <entry key="java" value="228" />
+          <entry key="java" value="229" />
           <entry key="pom" value="3" />
           <entry key="properties" value="8" />
-          <entry key="xml" value="29" />
+          <entry key="xml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="42" />
-          <entry key="JAVA" value="228" />
+          <entry key="JAVA" value="229" />
           <entry key="Properties" value="8" />
-          <entry key="XML" value="32" />
+          <entry key="XML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6029" />
+          <entry key="java" value="6045" />
           <entry key="properties" value="134" />
-          <entry key="xml" value="40" />
+          <entry key="xml" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6029" />
+          <entry key="JAVA" value="6045" />
           <entry key="Properties" value="134" />
-          <entry key="XML" value="40" />
+          <entry key="XML" value="42" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imooc-video-mapper/src/main/java/com/imooc/mapper/VideosMapper.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/VideoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="184">
+              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imooc-video-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -123,7 +127,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/imooc-video-service/pom.xml" />
-        <option value="$PROJECT_DIR$/imooc-video-web/pom.xml" />
         <option value="$PROJECT_DIR$/imooc-video-common/src/main/java/com/imooc/utils/JsonUtils.java" />
         <option value="$PROJECT_DIR$/imooc-video-web/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/imooc-video-mapper/pom.xml" />
@@ -156,8 +159,9 @@
         <option value="$PROJECT_DIR$/imooc-video-pojo/src/main/java/com/imooc/vo/VideosVo.java" />
         <option value="$PROJECT_DIR$/imooc-video-service/src/main/java/com/imooc/service/VideoService.java" />
         <option value="$PROJECT_DIR$/imooc-video-service/src/main/java/com/imooc/service/impl/VideoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/VideoController.java" />
         <option value="$PROJECT_DIR$/imooc-video-mapper/src/main/java/com/imooc/mapper/VideosMapper.java" />
+        <option value="$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/VideoController.java" />
+        <option value="$PROJECT_DIR$/imooc-video-web/pom.xml" />
       </list>
     </option>
   </component>
@@ -224,7 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,59 +239,6 @@
               <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
               <item name="imooc-video-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc-video-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc-video-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc-video-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc-video-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc-video-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc-video-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc-video-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
@@ -376,11 +326,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="imooc" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="imooc-video-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="imooc-video-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-video-web" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -474,19 +431,18 @@
       <workItem from="1542857735901" duration="17112000" />
       <workItem from="1542942193748" duration="24624000" />
       <workItem from="1543021199620" duration="15678000" />
-      <workItem from="1543049759548" duration="246000" />
+      <workItem from="1543049759548" duration="1763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67296000" />
+    <option name="totallyTimeSpent" value="68813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.2593184" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26464325" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -497,13 +453,13 @@
       <window_info anchor="bottom" id="Spring" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.27840328" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.27840328" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4247697" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.35236004" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35236004" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32930845" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32930845" />
@@ -516,7 +472,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32959402" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3290735" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3296875" />
     </layout>
     <layout-to-restore>
@@ -732,6 +688,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1416">
           <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -770,20 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-video-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -847,6 +793,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -882,6 +832,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="263" selection-start-line="263" selection-end-line="263" />
+          <folding>
+            <element signature="e#8567#8568#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -896,16 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,11 +874,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-video-mapper/src/main/java/com/imooc/mapper/VideosMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="308">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-video-web/src/main/java/com/imooc/controller/VideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-video-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
     </entry>

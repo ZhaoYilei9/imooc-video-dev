@@ -1,6 +1,9 @@
+com/imooc/service/impl/VideoServiceImpl.class
 com/imooc/service/BgmService.class
-com/imooc/service/UserService.class
 com/imooc/service/impl/UserServiceImpl.class
 com/imooc/service/CommentsService.class
 com/imooc/service/impl/CommentsServiceImpl.class
+com/imooc/service/conf/MyConfig.class
+com/imooc/service/UserService.class
+com/imooc/service/VideoService.class
 com/imooc/service/impl/BgmServiceImpl.class
